@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="index.php" method="post">
+      <div class="container">
+        <h3>WELCOME TO TRAVEL LOG</h3>
+        <p>Enter the details below to store your travel log.</p>
+        <br />
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your name.."
+          required
+        />
+        <br />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Your last name.."
+        />
+        <br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email.."
+          required
+        /><br />
+        <label for="phone">Phone Number</label>
+        <input
+          type="phone"
+          name="phone"
+          minlength="7"
+          maxlength="15"
+          placeholder="Your phone number.."
+        /><br />
+        <label for="country">Country</label>
+        <input
+          type="text"
+          name="country"
+          minlength="2"
+          placeholder="Your country.."
+        /><br />
+        <label for="visitingcountries">Visiting Countries</label>
+        <input
+          type="text"
+          name="visitingcountries"
+          placeholder="Enter the countries you are visiting...."
+          required
+        /><br />
+        <label for="date">Date</label>
+        <input type="date" name="dates" required /><br />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
